@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yuqirong.cardswipeview.MainActivity"
+    android:background="@color/superlightgray">
+
+    <LinearLayout
+        android:id="@+id/game_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray"
+        >
+
+        <RelativeLayout
+            android:id="@+id/love"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1">
+
+            <me.yuqirong.cardswipelayout.VerticalProgressBar
+                android:id="@+id/love_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/love"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fresh"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1">
+
+            <me.yuqirong.cardswipelayout.VerticalProgressBar
+                android:id="@+id/fresh_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fresh"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/money"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1">
+
+            <me.yuqirong.cardswipelayout.VerticalProgressBar
+                android:id="@+id/money_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/health"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/strong"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1">
+
+            <me.yuqirong.cardswipelayout.VerticalProgressBar
+                android:id="@+id/strong_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cash"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/year_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightblue"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0年"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="第99次"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/timg"
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/timg"/>
+
+    <ImageView
+        android:id="@+id/black_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/black"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_info"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/darkgray"
+        android:textSize="16dp"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:textColor="@color/darkgray"
+        />
+
+</RelativeLayout>
