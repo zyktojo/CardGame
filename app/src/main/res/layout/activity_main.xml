@@ -3,16 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yuqirong.cardswipeview.MainActivity"
-    android:background="@color/superlightgray">
+    android:background="@color/lightgray"
+    tools:context="com.yuqirong.cardswipeview.MainActivity">
+
+    <ImageView
+        android:id="@+id/timg"
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/timg"/>
+
+    <ImageView
+        android:id="@+id/timg2"
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/timg"/>
+
+    <ImageView
+        android:id="@+id/timg3"
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/timg"/>
+
+    <ImageView
+        android:id="@+id/timg4"
+        android:layout_width="wrap_content"
+        android:layout_height="375dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/timg"/>
 
     <LinearLayout
         android:id="@+id/game_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/gray"
-        >
+        android:background="@color/darkgray"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:id="@+id/love"
@@ -23,13 +54,13 @@
             <me.yuqirong.cardswipelayout.VerticalProgressBar
                 android:id="@+id/love_progress"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_centerInParent="true" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/love"/>
+                android:background="@drawable/love" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -41,13 +72,13 @@
             <me.yuqirong.cardswipelayout.VerticalProgressBar
                 android:id="@+id/fresh_progress"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_centerInParent="true" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/fresh"/>
+                android:background="@drawable/fresh" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -59,13 +90,13 @@
             <me.yuqirong.cardswipelayout.VerticalProgressBar
                 android:id="@+id/money_progress"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_centerInParent="true" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/health"/>
+                android:background="@drawable/health" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -77,13 +108,13 @@
             <me.yuqirong.cardswipelayout.VerticalProgressBar
                 android:id="@+id/strong_progress"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_centerInParent="true" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/cash"/>
+                android:background="@drawable/cash" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -92,71 +123,73 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/lightblue"
+        android:background="@color/darkblue"
         android:padding="12dp">
 
         <TextView
-            android:id="@+id/years"
+            android:id="@+id/months"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0年"
-            android:textSize="18dp"
+            android:text="0月"
             android:textColor="@color/white"
-            />
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:text="第99次"
-            android:textSize="18dp"
+            android:text="第次"
             android:textColor="@color/white"
-            />
+            android:textSize="18dp" />
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/timg"
-        android:layout_width="300dp"
-        android:layout_height="360dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/timg"/>
 
     <ImageView
         android:id="@+id/black_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@color/black"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/game_info"
-        android:layout_margin="8dp"
         android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:gravity="center"
         android:textColor="@color/darkgray"
-        android:textSize="16dp"
-        android:gravity="center"/>
+        android:textSize="16dp" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="25dp"
-        />
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="55dp" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="18dp"
+        android:layout_marginBottom="60dp"
         android:textColor="@color/darkgray"
-        />
+        android:textSize="18dp" />
 
+    <Button
+        android:id="@+id/game_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:padding="6dp"
+        android:text="结束回合"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_gameover"
+        android:visibility="gone"
+        />
 </RelativeLayout>
